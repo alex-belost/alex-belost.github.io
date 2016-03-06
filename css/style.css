@@ -1,0 +1,121 @@
+===================================
+=            Other Style            =
+===================================*/
+body { margin: 0; padding: 0; }
+a, a:hover, a:focus, a:visited, a:active { text-decoration: none; }
+li { list-style-type: none; }	
+
+.clearfix:before, .clearfix:after { display: table; clear: both; content: ""; }
+
+/*Title & Content*/
+.info__title { font: 38px "adventpro_bold", sans-serif; position: relative; display: block; text-align: center; letter-spacing: 1px; text-transform: uppercase; }
+.info__title_font-s { font-family: "adventpro_med", sans-serif; letter-spacing: -1px; }
+
+.info__content { font: 1.3em "opensans_reg",sans-serif; line-height: 28px; text-align: center; }
+
+.info__line:before { display: block; height: 1px; margin-bottom: 20px; content: ""; }
+/*=====  End of Other Style  ======*/
+
+/*==============================
+=            Header            =
+==============================*/
+/*other*/
+#header { height: 80px; background-color: #000; display: block;}
+.header__wrapper { position: fixed; z-index: 9999; top: 0; right: 0; left: 0; margin: auto; background-color: rgba(0,0,0,.9); }
+.logo__text, .nav__text {text-transform: uppercase; color: #fff; }
+
+/*logo*/
+.header__logo { margin: 15px 0 0 0; }
+.logo__text { font: 34px/34px "adventpro_bold", sans-serif; letter-spacing: 1.5px; }
+.logo__text_color { color: #008186; }
+.logo__text_small { font: 15px/15px "opensans_reg", sans-serif; display: block; letter-spacing: .8px; }
+
+/*nav*/
+.nav {float: right; margin-top: 41px;  }
+.nav__item { display: block; float: left; margin-right: 45px; }
+.nav__item:last-child { margin-right: 0; }
+.nav__text, .nav__text:hover, .nav__text:focus {font: 24px/24px "adventpro_bold", sans-serif; color: #e5e5e5;  }
+.nav__text:hover {-webkit-transition: all .2s; -moz-transition: all .2s; -o-transition: all .2s; transition: all .2s; color: #008186;  }
+.nav__item:active {-webkit-transition: all .2s; -moz-transition: all .2s; -o-transition: all .2s; transition: all .2s; -webkit-transform: scale(.9, .9); -moz-transform: scale(.9, .9); -ms-transform: scale(.9, .9); -o-transform: scale(.9, .9); transform: scale(.9, .9);  }
+
+/*button*/
+.header__btn { font-size: 34px; line-height: 0; position: absolute; top: 24px; right: 10px; color: #e5e5e5; border: none; outline: none; background-color: #000; }
+.header__btn:hover {-webkit-transition: all .2s; -moz-transition: all .2s	; -o-transition: all .2s; transition: all .2s	; color: #008186;  }
+.header__btn:active { -webkit-transform: scale(.9, .9); -ms-transform: scale(.9, .9); -o-transform: scale(.9, .9); transform: scale(.9, .9); }
+/*=====  End of Header  ======*/
+
+/*==============================
+=            Slider            =
+==============================*/
+#slider { position: relative; }
+#slider:before, #slider:after { display: block; height: 6.2px; content: ""; background-color: #4affff; }
+
+/*image*/
+.carousel__img { height: 600px; -webkit-background-size: cover !important; -moz-background-size: cover !important; -ms-background-size: cover !important; -o-background-size: cover !important; background-size: cover !important; }
+.carousel__img_1 { background: url(../images/slider_img.jpg) no-repeat; }
+.carousel__img_2 { background: url(../images/slider_img_1.jpg) no-repeat; }
+.carousel__img_3 { background: url(../images/slider_img_2.jpg) no-repeat; }
+
+/*Text Slider*/
+.item__wrapper { display: table; width: 100%; height: 600px; }
+.item__text { font: 5em "adventpro_reg", sans-serif; display: table-cell; width: 100%; text-align: center; vertical-align: middle; letter-spacing: .9px; text-transform: uppercase; color: #fff; color: #0e9a98; }
+.item__text_color { font-family: "adventpro_bold", sans-serif; display: inline-block; padding: 0 17px; letter-spacing: 1px; color: #fff; background-color: #008186; }
+
+/*Slider button*/
+.slider__button_wrap {position: absolute; z-index: 2; top: 0; bottom: 0; display: table; width: 40px; height: 40px;  margin: auto; cursor: pointer;background-color: #00aaa8;  }
+.slider__button { font-size: 18px; line-height: 0; display: table-cell; text-align: center;vertical-align: middle; color: #fff;  }
+.slider__button_next {right: 10px;  padding-left: 3px; }
+.slider__button_prev {left: 10px;  padding-right: 3px; }
+
+.slider__button_next:active { transform: translateX(10px); }
+.slider__button_prev:active { transform: translateX(-10px); }
+
+.slider__button_next:active, .slider__button_prev:active { transition: all .1s; }
+/*=====  End of Slider  ======*/
+
+/*================================
+=            About US            =
+================================*/
+.about__info { padding: 100px 10px; }
+/*title*/
+.about__title_color { color: #008186; }
+
+/*content*/
+.about__content_color { color: #555; }
+
+.about__line_color:before { background-color: #E8E8E8; }
+/*=====  End of About US  ======*/
+
+/*================================
+=            Services            =
+================================*/
+.services__wrapper { padding: 100px 0; background-color: #008186; }
+.services__title_color, .services__content_color { color: #fff; }
+.services__line_color:before { background-color: #fff; }
+ 
+/*some-serv*/
+.some-serv { margin-top: 25px; }
+
+.some-serv__item:before {position: absolute; top: 5px; left: -100px; width: 82px; height: 82px; content: ""; background: url(../images/services_sprite.png) no-repeat;  }
+.some-serv__item { position: relative; margin-right: 10px;margin-left: 100px;  }
+.some-serv__item_img-3, .some-serv__item_img-6 { margin-right: 0; }
+/*Sprite*/
+.some-serv__item_img-2:before { background-position: -87px 0; }
+.some-serv__item_img-3:before { background-position: -174px 0; }
+.some-serv__item_img-4:before { background-position: 0 -87px; }
+.some-serv__item_img-5:before { background-position: -87px -87px; }
+.some-serv__item_img-6:before { background-position: -174px -87px; }
+
+/*text*/
+.some-serv__title { font: 30px/30px "adventpro_bold", sans-serif; display: block; margin-bottom: -15px;text-transform: uppercase;  }
+.some-serv__text {font: 1.2em/1.3em "opensans_reg", sans-serif; letter-spacing: 1px; color: #fff;  }
+/*=====  End of Services  ======*/
+
+/*============================
+=            News            =
+============================*/
+.news__wrapper { padding: 100px 0; }
+.news__title_color { color: #008287 }
+
+
+/*=====  End of News  ======*/
