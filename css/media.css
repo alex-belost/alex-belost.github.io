@@ -25,6 +25,9 @@
 
 	/*Some servics*/
 	.some-serv__item { margin-right: 0; }
+
+	/*News*/
+	.pictures__small_top { margin-top: 20px; }
 }
 
 /* Small Devices, Tablets */
@@ -36,9 +39,7 @@
 	#slider { margin-top: 0; }
 	.carousel__img, .item__wrapper { height: 300px; }
 	.item__text { font-size: 3.9em; }
-	.slider__button_wrap {
-		display: none;
-	}
+	.slider__button_wrap { display: none; }
 }
 @media only screen and (max-width : 525px) {
 	.nav { width: 100%; }

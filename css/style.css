@@ -97,8 +97,7 @@ li { list-style-type: none; }
 .some-serv { margin-top: 25px; }
 
 .some-serv__item:before {position: absolute; top: 5px; left: -100px; width: 82px; height: 82px; content: ""; background: url(../images/services_sprite.png) no-repeat;  }
-.some-serv__item { position: relative; margin-right: 10px;margin-left: 100px;  }
-.some-serv__item_img-3, .some-serv__item_img-6 { margin-right: 0; }
+.some-serv__item { position: relative; margin-left: 100px;  }
 /*Sprite*/
 .some-serv__item_img-2:before { background-position: -87px 0; }
 .some-serv__item_img-3:before { background-position: -174px 0; }
@@ -117,47 +116,54 @@ li { list-style-type: none; }
 .news__wrapper { padding: 100px 0; }
 .news__title_color { color: #008287 }
 
-.pictures {
-	position: relative;
-	margin: 4px;
-}
-.pictures__img {
-	width: 100%;
-}
+.pictures { position: relative; }
+.pictures__img { width: 100%; }
 
-.pictures__data {
-	position: absolute;
-	top: 0;
-	right: 0;
-	background-color: rgba(0,0,0,.7);
-	color: #fff;
-	text-transform: uppercase;
-	padding: 5px 16px;
-	font: 16px/16px 'adventpro_bold', sans-serif;
-}
+.pictures__data { font: 16px/16px "adventpro_bold", sans-serif; position: absolute; top: 0; right: 0; padding: 5px 16px; text-transform: uppercase; color: #fff; background-color: rgba(0,0,0,.7); }
 
-.pictures__info {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	background-color: rgba(44,151,148, .7);
-	text-align: justify;
-	margin-bottom: 2.5%;
-	padding: 8px 15px;
-}
-.pictures__title {
-	font: 30px/30px 'adventpro_bold', sans-serif;
-	text-transform: uppercase;
-	display: block;
-	margin-bottom: -9px;
-}
-.pictures__text {
-	font: 16px/16px 'opensans_reg', sans-serif;
-	color: #fff;
-	display: block;
-	margin-bottom: 0px;
-}
-.pictures__marg {
-	margin-bottom: 12px;
-}
+.pictures__info { position: absolute; bottom: 0; left: 0; margin-bottom: 2.5%; padding: 8px 15px; text-align: justify; background-color: rgba(44,151,148, .7); }
+.pictures__title { font: 30px/30px "adventpro_bold", sans-serif; display: block; margin-bottom: -9px; text-transform: uppercase; }
+.pictures__text { font: 16px/16px "opensans_reg", sans-serif; display: block; margin-bottom: 3px; color: #fff; }
+
+/*Small Pict*/
+.pictures__small_top { margin-bottom: 20px; }
+
+.pictures__data_bg { background-color: rgba(44,151,148, .7); }
+.pictures__info_small { display: block; width: 100%; background-color: rgba(0,0,0, .7); }
+.pictures__title_small { font: 18px/18px "adventpro_bold", sans-serif; text-transform: uppercase; color: #fff; }
 /*=====  End of News  ======*/
+
+/*================================
+=            Contacts            =
+================================*/
+.contacts__wrapper {
+	padding: 100px 0;
+	background: url(../images/contacts_bg.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.about__title_color, .about__content_color, .company__name, .company__adress, .company__contact { color: #fff; }
+
+.company__info:before { display: block; height: 1px; margin: 12px 0 15px 0; content: ""; background-color: #fff; }
+
+.contacts__info { margin-top: 50px; }
+.contact__maps { width: 100%; height: 205px; }
+
+.company__name, .company__info { font: 24px/24px "opensans_reg", sans-serif; }
+.company__info_fz { font-size: 16px; }
+
+.company__adress, .company__contact { display: block; }
+.company__adress { float: left; }
+.company__contact { float: right; }
+
+#contacts {
+	position: relative;
+}
+#contacts:after {
+	content: '';
+	height: 6px;
+	background-color: #00AAA8;
+	display: block;
+}
+.up_button { font-size: 18px; position: absolute; right: 0; bottom: 6px; width: 40px; height: 40px; -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); transform: rotate(-90deg); color: #fff; border: none; outline: none; background-color: #00aaa8; }
+/*=====  End of Contacts  ======*/
