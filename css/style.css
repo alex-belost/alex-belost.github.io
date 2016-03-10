@@ -21,7 +21,7 @@ li { list-style-type: none; }
 ==============================*/
 /*other*/
 #header { height: 80px; background-color: #000; display: block;}
-.header__wrapper { /*position: fixed;*/ z-index: 9999; top: 0; right: 0; left: 0; margin: auto; background-color: rgba(0,0,0,.9); }
+.header__wrapper { position: fixed; z-index: 9999; top: 0; right: 0; left: 0; margin: auto; background-color: rgba(0,0,0,.9); }
 .logo__text, .nav__text {text-transform: uppercase; color: #fff; }
 
 /*logo*/
@@ -136,13 +136,8 @@ li { list-style-type: none; }
 /*================================
 =            Contacts            =
 ================================*/
-.contacts__wrapper {
-	padding: 100px 0;
-	background: url(../images/contacts_bg.png) no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
-.about__title_color, .about__content_color, .company__name, .company__adress, .company__contact { color: #fff; }
+.contacts__wrapper { padding: 100px 0; background: url(../images/contacts_bg.png) no-repeat; -webkit-background-size: cover; background-size: cover; }
+.contact__title_color, .contact__content_color, .company__name, .company__adress, .company__contact { color: #fff; }
 
 .company__info:before { display: block; height: 1px; margin: 12px 0 15px 0; content: ""; background-color: #fff; }
 
@@ -154,16 +149,47 @@ li { list-style-type: none; }
 
 .company__adress, .company__contact { display: block; }
 .company__adress { float: left; }
-.company__contact { float: right; }
+.company__contact { float: right; text-align: right; }
+.contact__mail:after { display: block; height: 1px; margin-top: -3px; content: ""; background-color: #fff; }
 
-#contacts {
-	position: relative;
-}
-#contacts:after {
-	content: '';
-	height: 6px;
-	background-color: #00AAA8;
-	display: block;
-}
-.up_button { font-size: 18px; position: absolute; right: 0; bottom: 6px; width: 40px; height: 40px; -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); transform: rotate(-90deg); color: #fff; border: none; outline: none; background-color: #00aaa8; }
+#contacts { position: relative; }
+#contacts:after { display: block; height: 6px; content: ""; background-color: #00aaa8; }
+
+/*Up Button*/
+.slide-top { position: absolute; right: 0; bottom: 6px; display: table; width: 40px; height: 40px; }
+.slide-top:active { -webkit-transition: all .1s; -moz-transition: all .1s; -ms-transition: all .1s; -o-transition: all .1s; transition: all .1s; -webkit-transform: translate(0, -5px); -moz-transform: translate(0, -5px); -ms-transform: translate(0, -5px); -o-transform: translate(0, -5px); transform: translate(0, -5px); }
+.up_button { display: table-cell; -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); transform: rotate(-90deg); text-align: center; vertical-align: middle; color: #fff; background-color: #00aaa8; }
+.up_button:hover, .up_button:focus { color: #fff; }
 /*=====  End of Contacts  ======*/
+
+/*==============================
+=            Footer            =
+==============================*/
+.footer__wrapper { padding: 50px 0; background-color: #000; }
+
+.footer__company-name { display: table; }
+.footer__company-name_title { font: 24px/24px "adventpro_bold", sans-serif; display: table-cell; color: #fff; }
+.footer__title_style { font: 24px/24px "adventpro_bold", sans-serif; letter-spacing: 0; color: #008186; }
+
+.footer__priv { font: 14px/16px "opensans_reg", sans-serif; display: table-cell; padding-left: 11px; vertical-align: middle; color: #fff; }
+.footer__priv:before { display: block; float: left; width: 1px; height: 14px; margin-top: 1px; margin-right: 9px; content: ""; background-color: #fff; }
+
+/*social*/
+.social { width: 155px; margin: 0 auto; padding: 0; text-align: center; }
+.social__item { display: block; float: left; margin-right: 5px; }
+.social__item:last-child { margin-right: 0; }
+
+/*social icon*/
+.social__link { display: block; width: 27px; height: 25px; }
+.social__link:hover { -webkit-transition: all .2s; -moz-transition: all .2s; -ms-transition: all .2s; -o-transition: all .2s; transition: all .2s; -webkit-transform: scale(1.2, 1.2); -moz-transform: scale(1.2, 1.2); -ms-transform: scale(1.2, 1.2); -o-transform: scale(1.2, 1.2); transform: scale(1.2, 1.2); }
+
+.social__link_face { background: url(../images/social_icon.png) no-repeat; }
+.social__link_twit { background: url(../images/social_icon.png) no-repeat; background-position: -28px 0; }
+.social__link_you { background: url(../images/social_icon.png) no-repeat; background-position: -54px 0; }
+.social__link_phot { background: url(../images/social_icon.png) no-repeat; background-position: -81px 0; }
+.social__link_plus { background: url(../images/social_icon.png) no-repeat; background-position: -109px 0; }
+
+/*license*/
+.license__text { font: 14px/23px "opensanse_reg", sans-serif; display: block; text-align: right; color: #dcdcdc; }
+.license__company { color: #007479; }
+/*=====  End of Footer  ======*/

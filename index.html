@@ -12,7 +12,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" href="favicon.png">
-	<link rel="stylesheet" href="libs/font-awesome-4.5.0/css/font-awesome.min.css"><link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/font-awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
 
 	<link rel="stylesheet" href="css/fonts.css">
@@ -47,16 +48,16 @@
 						<div class="header__item clearfix">							
 							<ul class="nav clearfix">
 								<li class="nav__item">
-									<a href="#" class="nav__text">About Us</a>
+									<a href="#about-us" class="nav__text">About Us</a>
 								</li>
 								<li class="nav__item">
-									<a href="#" class="nav__text">Services</a>
+									<a href="#services" class="nav__text">Services</a>
 								</li>
 								<li class="nav__item">
-									<a href="#" class="nav__text">News</a>
+									<a href="#news" class="nav__text">News</a>
 								</li>
 								<li class="nav__item">
-									<a href="#" class="nav__text">Contacts</a>
+									<a href="#contacts" class="nav__text">Contacts</a>
 								</li>
 							</ul><!-- end Nav -->
 						</div>
@@ -319,13 +320,13 @@
 						<!-- Title -->
 						<div class="row">
 							<div class="col-lg-4 col-lg-offset-4">
-								<span class="info__title">Contact <span class="info__title_font-s about__title_color">Us</span></span>
+								<span class="info__title">Contact <span class="info__title_font-s contact__title_color">Us</span></span>
 							</div>
 						</div>
 						<!-- Content -->
 						<div class="row">
 							<div class="col-lg-12">
-								<p class="info__content about__content_color info__line about__line_color">Donec faucibus hendrerit libero nec varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin viverra lorem mi, in tincidunt neque volutpat id. </p>
+								<p class="info__content contact__content_color info__line contact__line_color">Donec faucibus hendrerit libero nec varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin viverra lorem mi, in tincidunt neque volutpat id. </p>
 							</div>
 						</div><!-- Content -->
 					</div>
@@ -334,12 +335,12 @@
 				<div class="contacts__info">
 					<div class="row">
 						<!-- Maps -->
-						<div class="col-lg-7">
+						<div class="col-lg-7 col-md-7">
 							<iframe class="contact__maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d906.4799442057223!2d36.227483107741456!3d50.01299592859333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a123fdb430e1%3A0xe208ac2235540c2f!2z0J3QsNGD0YfQvdCw0Y8!5e0!3m2!1sru!2sua!4v1456414884890" frameborder="0" allowfullscreen></iframe>
 						</div>
 
 						<!-- Company info -->
-						<div class="col-lg-5">
+						<div class="col-lg-5 col-md-5">
 							<div class="company">
 								<span class="company__name">Company Name</span>
 								<div class="company__info company__info_fz">
@@ -353,14 +354,56 @@
 				
 			</div>			
 		</div><!-- contacts__wrapper -->
-		<button class="up_button"><i class="fa fa-chevron-right"></i></button>
+		<div id="top-button" class="slide-top">
+			<a href="#header" class="up_button"><i class="fa fa-chevron-right"></i></a>
+		</div>
 	</div>	
 	<!--====  End of Contacts  ====-->
 	
 	<!--============================
 	=            Footer            =
 	=============================-->
-	<div id="footer" class="footer"></div>	
+	<div id="footer">
+		<div class="footer__wrapper">
+			<div class="container">
+				<div class="row">
+					<!-- Company name -->
+					<div class="col-lg-4 col-md-4">
+						<div class="footer__company-name">
+							<span class="info__title footer__company-name_title">Company <span class="info__title_font-s footer__title_style">Name</span></span>
+							<span class="footer__priv">Terms</span><span class="footer__priv">Privacy</span>
+						</div>
+					</div>
+					<!-- social -->
+					<div class="col-lg-4 col-md-4">
+						<ul class="social clearfix">
+							<li class="social__item">
+							<a href="#" class="social__link social__link_face" hred="#"></a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="social__link social__link_twit" hred="#"></a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="social__link social__link_you" hred="#"></a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="social__link social__link_phot" hred="#"></a>
+							</li>
+							<li class="social__item">
+								<a href="#" class="social__link social__link_plus" hred="#"></a>
+							</li>
+						</ul>
+					</div>
+					<!-- License -->
+					<div class="col-lg-4 col-md-4">
+						<div class="license">
+							<span class="license__text">Copyright © 2013 <span class="license__company">Company Name</span>. All rights reserved.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
 	<!--====  End of Footer  ====-->
 	
 	
@@ -374,8 +417,8 @@
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 	<script src="libs/jquery/jquery-2.2.1.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
 	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
-	<script src="libs/landing-nav/navigation.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

@@ -1,10 +1,5 @@
 $(document).ready(function() {
 
-	//Навигация по Landing Page
-	//$(".top_mnu") - это верхняя панель со ссылками.
-	//Ссылки вида <a href="#contacts">Контакты</a>
-	$(".top_mnu").navigation();
-
 	//Каруселька
 	//Документация: http://owlgraphic.com/owlcarousel/
 	var owl = $(".carousel");
@@ -35,5 +30,17 @@ $(document).ready(function() {
 	$('.header__btn').click(function() {
 		$('.nav').slideToggle();
 	});
+
+	//Плавный якорь
+	$("#header, #top-button").on("click","a", function (event) {
+      //отменяем стандартную обработку нажатия по ссылке
+      event.preventDefault();
+      //забираем идентификатор бока с атрибута href
+      var id  = $(this).attr('href'),
+      //узнаем высоту от начала страницы до блока на который ссылается якорь
+      top = $(id).offset().top;
+      //анимируем переход на расстояние - top за 1500 мс
+      $('body,html').animate({scrollTop: top}, 1500);
+   });
 
 });
