@@ -1,0 +1,32 @@
+{
+  "name": "alex-belost.github.io",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "serve": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-belost/alex-belost.github.io.git"
+  },
+  "author": "Oleksandr Bilostotskyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex-belost/alex-belost.github.io/issues"
+  },
+  "homepage": "https://github.com/alex-belost/alex-belost.github.io#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "html-loader": "^4.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "sass": "^1.53.0",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
+  }
+}
