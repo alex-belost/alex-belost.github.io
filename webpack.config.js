@@ -9,7 +9,7 @@ module.exports = {
     path.resolve(__dirname, 'src/stylesheets/style.scss'),
   ],
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, ''),
   },
   devServer: {
     watchFiles: [ 'src/*' ],
